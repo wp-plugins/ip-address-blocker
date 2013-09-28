@@ -1,1 +1,0 @@
-<br /><br /><center>Install <a href="http://www.lionscripts.com/ip-address-blocker" target="_blank">IP Address Blocker Professional Plugin</a> to enable complete IP Based security on your WordPress Websites.</center>
