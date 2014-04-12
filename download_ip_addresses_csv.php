@@ -22,10 +22,15 @@ if(isset($_GET['format']) && !empty($_GET['format']))
 				$rows .= $value.','.'Permanent'.','.'Blocked IP. (Lite Version Block ID-'.$key.')'.','.''.','.''."\n";
 			}
 		}
+
+		if(!headers_sent())
+		{
+			header('Content-Type: application/csv');
+			header('Content-Disposition: attachment; filename=IP_Address_Blocker_Lite_Bkp_'.(date('d_M_Y')).'_In_WordPress_IP_Blocker_Pro_CSV_Format'.'.csv');
+			header('Pragma: no-cache');
+		}
+
 		echo $header."\n".$rows;
-		header('Content-Type: application/csv');
-		header('Content-Disposition: attachment; filename=IP_Address_Blocker_Lite_Bkp_'.(date('d_M_Y')).'_In_WordPress_IP_Blocker_Pro_CSV_Format'.'.csv');
-		header('Pragma: no-cache');
 		exit;
 	}
 	else
@@ -42,10 +47,14 @@ if(isset($_GET['format']) && !empty($_GET['format']))
 			}
 		}
 		
+		if(!headers_sent())
+		{
+			header('Content-Type: application/csv');
+			header('Content-Disposition: attachment; filename=IP_Address_Blocker_Lite_Bkp_'.(date('d_M_Y')).'_In_Normal_CSV_Format'.'.csv');
+			header('Pragma: no-cache');
+		}
+
 		echo $header."\n".$rows;
-		header('Content-Type: application/csv');
-		header('Content-Disposition: attachment; filename=IP_Address_Blocker_Lite_Bkp_'.(date('d_M_Y')).'_In_Normal_CSV_Format'.'.csv');
-		header('Pragma: no-cache');
 		exit;
 	}
 }

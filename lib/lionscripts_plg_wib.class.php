@@ -10,7 +10,7 @@ if(!class_exists('lionscripts_plg_wib'))
 			
 			$this->plg_name 				= 'IP Address Blocker';
 			$this->plg_description 			= '';
-			$this->plg_version 				= '5.1';
+			$this->plg_version 				= '5.2';
 			$this->plg_hook_version 		= '1';
 			$this->plg_identifier 			= 'WIB';
 			$this->plg_table['ip']			= $wpdb->prefix.strtolower(LIONSCRIPTS_SITE_NAME_SHORT).'_'.str_replace(' ', '_', strtolower($this->plg_name));
