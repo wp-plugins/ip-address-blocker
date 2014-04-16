@@ -5,7 +5,7 @@ Author URI: http://www.lionscripts.com/
 Donate link: http://www.lionscripts.com/donate.php
 Tags: wp, wordpress, ip, address, ips, blocker, Post, block, stats, plugin, filter, admin, access, page, posts, images, links, comments, lion scripts, block ip
 Requires at least: 2.0
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: 5.2
 
 == Description ==
