@@ -10,7 +10,7 @@ if(!class_exists('lionscripts_plg_wib'))
 			
 			$this->plg_name 				= 'IP Address Blocker';
 			$this->plg_description 			= '';
-			$this->plg_version 				= '5.2';
+			$this->plg_version 				= '5.21';
 			$this->plg_hook_version 		= '1';
 			$this->plg_identifier 			= 'WIB';
 			$this->plg_table['ip']			= $wpdb->prefix.strtolower(LIONSCRIPTS_SITE_NAME_SHORT).'_'.str_replace(' ', '_', strtolower($this->plg_name));
@@ -356,7 +356,7 @@ if(!class_exists('lionscripts_plg_wib'))
                         <b><a href="<?php echo LIONSCRIPTS_SUPPORT_PAGE_URL; ?>" target="_blank" title="Buy the <?php echo $this->plg_name_pro; ?>">Technical Support</a></b>
                         <br /><br />
 						
-						<b>Your current IP Address is </b><?php echo LIONSCRIPTS_CURRENT_USER_IP; ?> , <b><font title="You will be unable to view your site if you block your own IP Address.">Please do not block your own IP.</font></b>
+						<b>Your current IP Address is </b><span style="color:#F00;font-weight:bold;font-size:18px;"><?php echo LIONSCRIPTS_CURRENT_USER_IP; ?></span> , <b><font title="You will be unable to view your site if you block your own IP Address.">Please do not block your own IP.</font></b>
 						
 						<br /><br />
 						<?php 

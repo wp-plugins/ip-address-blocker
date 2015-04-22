@@ -5,8 +5,8 @@ Author URI: http://www.lionscripts.com/
 Donate link: http://www.lionscripts.com/donate.php
 Tags: wp, wordpress, ip, address, ips, blocker, Post, block, stats, plugin, filter, admin, access, page, posts, images, links, comments, lion scripts, block ip
 Requires at least: 2.0
-Tested up to: 3.9
-Stable tag: 5.2
+Tested up to: 4.2
+Stable tag: 5.21
 
 == Description ==
 
@@ -51,6 +51,7 @@ For all kind of support and questions, please visit http://support.lionscripts.c
 
 == Changelog ==
 
+* Version : 5.21 : A very little change but added due to users request that they are accidently blocking their own ID. So now the message clearly shows (highlighted in red) that this is your IP, please do not block this.
 * Version : 5.2 : CSV Download Bug Fix as stated by a Wordpress user (Issue at http://support.lionscripts.com/196/download-blocked-ip-addresses)
 * Version : 5.1 : Quick Fix Provided due to issue: Previous Saved IP Addresses were not coming
 * Version : 5.0 : Minor Bug Fixes with new optimized and better structure
